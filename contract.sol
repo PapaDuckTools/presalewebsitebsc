@@ -1,3 +1,7 @@
+/**
+ *Submitted for verification at BscScan.com on 2024-02-16
+*/
+
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.6.12;
@@ -73,7 +77,7 @@ contract Ownable {
     }
 }
 
-contract Sale_Contract is Ownable { // Inherit from Ownable
+contract SnooPresale is Ownable { // Inherit from Ownable
     using SafeMath for uint256;
     IST20 public token;
     uint256 public rate;
@@ -85,7 +89,7 @@ contract Sale_Contract is Ownable { // Inherit from Ownable
 
     // ... (rest of your contract code remains the same)
     
-    // Function to transfer ownership of the Sale_Contract
+    // Function to transfer ownership of the SnooPresale
     function transferContractOwnership(address newOwner) external onlyOwner {
         transferOwnership(newOwner);
     }
